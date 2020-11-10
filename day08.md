@@ -44,3 +44,8 @@
 >- rimraf
 >- silly-datatime
 >- formidable
+
+>cnpm express ejs rimraf silly-datatime formidable -S
+    
+    PS:
+        package.json中的dependencies选项中的依赖会通过npm(cnpm) i 命令自动安装
