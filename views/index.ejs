@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>在线相册</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <script src="js/html5shiv.min.js"></script>
+    <script src="js/respond.min.js"></script>
+    <style>
+        .items{
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            margin-right: auto;
+            margin-left: auto;
+            justify-content: flex-start;
+        }
+        .item{
+            width: 150px;
+            height: 200px;
+            text-align: center;
+            margin: 0 10px;
+        }
+        img{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">在线相册</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="/pic/upload">上传图片<span class="sr-only">(current)</span></a></li>
+                <li><a href="/album/create">新建相册</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--<h1><%= albums %></h1>-->
+<div class="items">
+    <% for(var i=0;i<albums.length;i++){ %>
+    <div class="item">
+        <img src="/img/dir.jpg" alt="">
+        <h4><%= albums[i] %></h4>
+        <a href="#">Delete</a>
+    </div>
+    <% } %>
+</div>
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.js"></script>
+</body>
+</html>
