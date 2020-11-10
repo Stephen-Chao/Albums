@@ -16,16 +16,18 @@
             margin-right: auto;
             margin-left: auto;
             justify-content: flex-start;
+
         }
         .item{
             width: 150px;
             height: 200px;
             text-align: center;
-            margin: 0 10px;
+            margin: 15px 10px;
         }
-        img{
+        .item img{
             width: 100%;
         }
+
     </style>
 </head>
 <body>
@@ -42,7 +44,7 @@
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="/pic/upload">上传图片<span class="sr-only">(current)</span></a></li>
+                <li><a href="/pic/upload">上传图片<span class="sr-only">(current)</span></a></li>
                 <li><a href="/album/create">新建相册</a></li>
             </ul>
         </div>
@@ -52,13 +54,25 @@
 <div class="items">
     <% for(var i=0;i<albums.length;i++){ %>
     <div class="item">
-        <img src="/img/dir.jpg" alt="">
+        <a href="/pic/show?dirname=<%= albums[i]%>">
+            <img src="/img/dir.jpg" alt="">
+        </a>
         <h4><%= albums[i] %></h4>
-        <a href="#">Delete</a>
+        <a href="/album/deletealbum/<%= albums[i]%>" onclick="del(this)">删除</a>
     </div>
     <% } %>
 </div>
 
+<script>
+    function del(ele) {
+        event.preventDefault();
+        var f = confirm("确定要删除"+ele.toString().substring(40)+"么");
+        if(!f){
+            return ;
+        }
+        location.href = $(ele).attr("href");
+    }
+</script>
 <script src="/js/jquery.min.js"></script>
 <script src="/js/bootstrap.js"></script>
 </body>

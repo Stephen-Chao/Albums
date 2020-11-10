@@ -30,11 +30,37 @@ function getContents(dirname,callback) {
 function create(dirName,callback) {
     fs.mkdir(dirName,function (err) {
        callback(err);
-
     });
 }
+
+/**
+ * 删除制定名称的文件夹
+ * @param path {String} 被删除文件夹/文件的名称
+ */
+function remove(path,callback) {
+    fs.stat(path,function (err,stats) {
+        if(err){
+            callback(err);
+            return;
+        }
+        if(stats.isFile()){
+            //文件的删除
+            fs.unlink(path,function (err) {
+               callback(err);
+            });
+            return;
+        }
+        //不是文件删除文件夹
+        fs.rmdir(path,{recursive:true},function (err) {
+            callback(err);
+        });
+    });
+
+}
+
 //暴露
 module.exports = {
     getContents:getContents,
-    create:create
+    create:create,
+    remove:remove
 }
