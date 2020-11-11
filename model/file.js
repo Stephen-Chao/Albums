@@ -58,9 +58,21 @@ function remove(path,callback) {
 
 }
 
+/**
+ * 修改文件的路径(重命名)
+ * @param {string} oldPath 旧路径
+ * @param {string} newPath 新路径
+ */
+function changeName(oldPath,newPath,callback){
+    fs.rename(oldPath,newPath,function (err) {
+        callback(err);
+    });
+}
+
 //暴露
 module.exports = {
     getContents:getContents,
     create:create,
-    remove:remove
+    remove:remove,
+    changeName:changeName
 }

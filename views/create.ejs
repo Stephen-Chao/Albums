@@ -68,6 +68,7 @@
                 if(res.status !="success"){
                     // alert("相册名不合法,请重新输入");
                     alert(res.msg);
+                    $("input[name=dirName]").val("");
                     return ;
                 }
                 //创建成功

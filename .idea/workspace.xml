@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="007ad45e-523e-4db1-b81e-3d6b9cc2ad60" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/router/pic.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/file.js" beforeDir="false" afterPath="$PROJECT_DIR$/model/file.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/router/ambul.js" beforeDir="false" afterPath="$PROJECT_DIR$/router/album.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/create.ejs" beforeDir="false" afterPath="$PROJECT_DIR$/views/create.ejs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +25,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1k4xm7DdLjKGmjojosHuewWLHi3" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -38,11 +46,12 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/uploads/🌶️💉🇩🇪🐂🍺" />
       <recent name="$PROJECT_DIR$/public/img" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.app.js">
-    <configuration name="ambul.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/router/ambul.js" working-dir="$PROJECT_DIR$/router">
+    <configuration name="album.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/router/album.js" working-dir="$PROJECT_DIR$/router">
       <method v="2" />
     </configuration>
     <configuration name="app.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/app.js" working-dir="$PROJECT_DIR$">
@@ -54,7 +63,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Node.js.app.js" />
-        <item itemvalue="Node.js.ambul.js" />
+        <item itemvalue="Node.js.album.js" />
         <item itemvalue="Node.js.file.js" />
       </list>
     </recent_temporary>
@@ -68,7 +77,7 @@
       <option name="presentableId" value="Default" />
       <updated>1604973820889</updated>
       <workItem from="1604973821948" duration="16663000" />
-      <workItem from="1605006216325" duration="212000" />
+      <workItem from="1605006216325" duration="8456000" />
     </task>
     <servers />
   </component>
@@ -100,9 +109,13 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1604998292951" />
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1604988630860">
+    <state x="440" y="370" width="598" height="490" key="find.popup" timestamp="1605059837578">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1604988630860" />
+    <state x="440" y="370" width="598" height="490" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1605059837578" />
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup" timestamp="1605063361650">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="196" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1605063361650" />
   </component>
 </project>
